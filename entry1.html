@@ -1,130 +1,109 @@
-<div id="efolio" data-page-node-id="JBYrJ2ZGosy0Wo7wCmAXuQ">
+<div id="efolio" data-page-node-id="PgsmyqKACd1vKDScDM1xly">
 <style>
-#efolio{--b:#006DAE;--bd:#004e7c;--deep:#02324e;--ink:#1a2b38;--mut:#5b7285;--bg:#eef4f8;--card:#fff;--line:#d9e5ec;--ph:#8ba3b3;font:16px/1.65 -apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+#efolio{--b:#006DAE;--bd:#004e7c;--deep:#02324e;--ink:#1a2b38;--mut:#5b7285;--bg:#fbfdfe;--card:#fff;--line:#e1eaf0;--ph:#8ba3b3;--warn:#c2551e;font:16px/1.75 -apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
 #efolio *{box-sizing:border-box;margin:0;padding:0}
-#efolio .wrap{max-width:880px;margin:0 auto;padding:0 24px}
-#efolio .hero{background:linear-gradient(135deg,var(--deep) 0%,var(--b) 62%,#2f8fc4 100%);color:#fff;padding:56px 0 44px}
-#efolio .hero .kicker{font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;opacity:.85}
-#efolio .hero h1{font-size:38px;line-height:1.12;margin:8px 0 12px;font-weight:800}
-#efolio .hero .sub{max-width:620px;font-size:16.5px;opacity:.93}
-#efolio .nm{margin-top:16px;font-size:14px;opacity:.88;letter-spacing:.02em}
-#efolio section{padding:40px 0 10px}
-#efolio .meta{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px}
-#efolio .meta span{font-size:11.5px;font-weight:700;padding:3px 11px;border-radius:99px;background:#e8f1f7;color:var(--bd)}
-#efolio .meta span.v{background:#e6f2ea;color:#2c6e3f}
-#efolio h2{font-size:24px;line-height:1.25;color:var(--bd);margin-bottom:6px}
-#efolio .lede{font-size:14.5px;color:var(--mut);margin-bottom:18px}
-#efolio .ph{border:2px dashed #b9cfdd;background:#f7fafc;border-radius:10px;color:var(--ph);padding:26px 22px;text-align:center;font-style:italic;font-size:14px}
-#efolio .ph b{font-style:normal;color:#6d8697}
-#efolio .body-ph{min-height:150px}
-#efolio .art-line{font-size:13.5px;color:#42586a;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 15px;margin-bottom:14px}
-#efolio .art-line b{color:var(--bd)}
-#efolio .fig{margin:20px 0}
-#efolio .figbox{border:2px dashed #b9cfdd;background:#f7fafc;border-radius:10px;aspect-ratio:16/9;display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;color:var(--ph);font-style:italic;font-size:13.5px;text-align:center;padding:16px}
-#efolio .figbox svg{width:38px;height:38px;opacity:.55}
-#efolio .ph-img{width:100%;display:block;border-radius:10px;border:1px solid var(--line)}
-#efolio figcaption{font-size:13px;color:#42586a;background:var(--card);border:1px solid var(--line);border-left:3px solid var(--b);border-radius:0 8px 8px 0;padding:11px 15px;margin-top:10px;line-height:1.6}
-#efolio figcaption b{color:var(--bd)}
-#efolio figcaption i{color:var(--ph)}
-#efolio .refs{margin-top:16px}
-#efolio .refs h4{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--bd);margin-bottom:8px}
+#efolio .wrap{max-width:780px;margin:0 auto;padding:0 24px}
+/* hero */
+#efolio .hero{background:linear-gradient(160deg,var(--deep) 0%,var(--b) 70%,#2f8fc4 100%);color:#fff;padding:64px 0 48px;text-align:center}
+#efolio .hero .kicker{font-size:11.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;opacity:.75}
+#efolio .hero h1{font-size:44px;line-height:1.08;margin:16px 0 10px;font-weight:800}
+#efolio .hero .sub{font-size:20px;opacity:.92;font-weight:500}
+#efolio .hero .nm{margin-top:20px;font-size:13px;opacity:.8;letter-spacing:.03em}
+/* links */
+#efolio .links{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:26px 0 0;font-size:13px;line-height:1.9;word-break:break-all}
+#efolio .links b{color:var(--bd)}
+#efolio .links a{color:var(--b);text-decoration:none}
+#efolio .links a:hover{text-decoration:underline}
+#efolio .links .note{font-size:11.5px;color:var(--mut)}
+/* lead */
+#efolio .lead{margin:44px 0 8px}
+#efolio .lead p{font-size:19px;line-height:1.7;color:var(--deep);margin:0 0 18px;font-weight:500}
+/* body text */
+#efolio .body p{font-size:15.5px;color:#33475a;margin:0 0 18px}
+/* figure */
+#efolio .figblock{margin:30px 0}
+#efolio .figblock img{width:100%;display:block;border-radius:10px;border:1px solid var(--line)}
+#efolio .cap{font-size:12px;color:var(--mut);text-align:center;font-style:italic;margin-top:10px;line-height:1.6}
+/* sections */
+#efolio .sect{margin-top:46px}
+#efolio .sect-title{font-size:13px;font-weight:800;letter-spacing:.18em;color:var(--b);text-transform:uppercase;margin-bottom:18px;display:flex;align-items:center;gap:14px}
+#efolio .sect-title::after{content:"";flex:1;height:1px;background:var(--line)}
+#efolio .sect p{font-size:15.5px;color:#33475a;margin:0 0 16px}
+#efolio .sect .intrigue{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--b);border-radius:0 10px 10px 0;padding:18px 22px}
+/* refs */
+#efolio .refs{margin-top:48px;padding-top:6px}
+#efolio .refs h4{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--bd);margin-bottom:10px}
 #efolio .refs ul{list-style:none}
-#efolio .refs li{font-size:13.5px;color:#42586a;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:9px 14px;margin:6px 0}
-#efolio .refs li i{color:var(--ph)}
-#efolio .foot{margin-top:46px;background:var(--deep);color:#cfe2ee;padding:26px 0;font-size:13px}
-#efolio .foot h4{color:#fff;font-size:12px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px}
+#efolio .refs li{font-size:13px;color:#42586a;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin:7px 0}
+/* footer */
+#efolio .foot{margin-top:52px;background:var(--deep);color:#cfe2ee;padding:28px 0;font-size:13px}
+#efolio .foot h4{color:#fff;font-size:11.5px;text-transform:uppercase;letter-spacing:.12em;margin-bottom:8px}
 #efolio .foot .ai{border:1px dashed rgba(255,255,255,.35);border-radius:8px;padding:13px 16px;color:#9fc6dd;font-style:italic}
 #efolio .foot p.r{margin-top:12px;font-size:12px;color:#7ea6bd}
-@media(max-width:720px){#efolio .hero h1{font-size:28px}#efolio section{padding:30px 0 6px}}
+@media(max-width:720px){#efolio .hero h1{font-size:32px}#efolio .lead p{font-size:17px}}
 </style>
 
-<div class="hero" data-page-node-id="osQDcz8U8PFpVCXLFhBlgP">
-  <div class="wrap" data-page-node-id="yXYUGbIv781p4FcVjzHCVe">
-    <p class="kicker" data-page-node-id="vyyFwcJYma2t54hJB910eC">GEN2052 · Genetics and Genomics · Monash University Malaysia</p>
-    <h1 data-page-node-id="zL8yh5Bs03q5wpbTbvbp4s">My GEN2052 eFolio</h1>
-    <p class="sub" data-page-node-id="BuYjcT1iD3suBnHCD1DSQj">Reflections on recent genetics research — each connecting a study from the literature to the concepts I have been learning across the semester.</p>
-    <p class="nm" data-page-node-id="vHyeSJB9CgjW0BHdVQTLzO">Jiaxuan Yang &nbsp;·&nbsp; 34610480 &nbsp;·&nbsp; Semester 2, 2026</p>
+<div class="hero" data-page-node-id="HhXA9I69XGiYd4uV9rxXCm">
+  <div class="wrap" data-page-node-id="3Oevh7AIgW89QFlCvPTiSn">
+    <p class="kicker" data-page-node-id="ubz8sBkm5h89zvvYDblxuK">GEN2052 · Entry 1 · Weeks 1–3 · Written Reflection</p>
+    <h1 data-page-node-id="LupXplTESKiCI3KZ0k8UAO">De-extinction</h1>
+    <p class="sub" data-page-node-id="eFPCe4GPLOH3AHQSQzebSO">Resurrection — or an expensive replacement?</p>
+    <p class="nm" data-page-node-id="Kwd6dFooSZsIvyOql9zt4P">Jiaxuan Yang &nbsp;·&nbsp; 34610480 &nbsp;·&nbsp; Semester 2, 2026</p>
   </div>
 </div>
 
-<div class="wrap" data-page-node-id="DI5dPj38qYLnE15zzFUQiE">
+<div class="wrap" data-page-node-id="BtAxE4j6En5NDfxmxWmVjM">
 
-<!-- ============ ENTRY 1 ============ -->
-<section id="e1" data-page-node-id="V0HGEJtMv8N9WvlyiLj5vw">
-  <div class="meta" data-page-node-id="u5RGrDJj8Ck6YNc7C67tWZ"><span data-page-node-id="juWfWYX6v3GUafopPjPe8e">Entry 1</span><span data-page-node-id="QAGUBFFUUxeDzkyNKB5ERG">Weeks 1–3</span><span data-page-node-id="SX5opSLQe1fMYrGcfhsqO7">Written reflection · 350 words</span></div>
-  <h2 data-page-node-id="TBdwMeG2QragJWoQateRZi">De-extinction: resurrection or high-tech replacement?</h2>
-  <p class="lede" data-page-node-id="pVhVihfMC4drdoVQZrqZ35">Weeks 1–3: DNA cloning and genomics; genome content — protein-coding genes</p>
-  <p class="art-line" data-page-node-id="koXEih8CxmmFB4mnl1PExy"><b data-page-node-id="RyAD6x40zU067ojQABUheG">Article:</b> <a href="https://theconversation.com/should-we-bring-back-the-dodo-de-extinction-is-a-feel-good-story-but-these-high-tech-replacements-arent-really-resurrecting-species-199586" target="_blank">Schnebly &amp; Minteer (2023), <i>The Conversation</i></a> &nbsp;·&nbsp; <b data-page-node-id="P6bqcCxgSeXefLD0i3LKOX">Original paper:</b> <a href="https://doi.org/10.1126/science.1236965" target="_blank">Sherkow &amp; Greely (2013), <i>Science</i></a></p>
-  <div class="ph body-ph" data-page-node-id="fauYcvDLMVVRrlYlTxfBPT"><b data-page-node-id="lGTs2XrG9zitpCJ6L2AfLg">Reflection — 350 words.</b><br data-page-node-id="GFmJXlP4C9LWYsTDza1pei">Explain the research question, approach and findings · connect to Weeks 1–3 concepts · weigh strengths &amp; limitations · broader significance · what I learned.</div>
-  <figure class="fig" data-page-node-id="urCnM09h188lc0lWr7gZsh">
-    <svg viewBox="0 0 1000 545" role="img" aria-label="Three routes to de-extinction diagram" style="width:100%;display:block;border-radius:10px;border:1px solid #d9e5ec">
-      <rect width="1000" height="545" rx="12" fill="#f7fafc"/>
-      <text x="500" y="44" text-anchor="middle" font-size="26" font-weight="800" fill="#004e7c" font-family="-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif">Three routes to de-extinction</text>
-      <text x="500" y="70" text-anchor="middle" font-size="14" fill="#5b7285" font-family="-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif">each starts from the extinct species' genome and aims at a living, self-sustaining population</text>
-      <g font-family="-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif">
-        <g transform="translate(30,95)">
-          <rect width="300" height="330" rx="10" fill="#fff" stroke="#d9e5ec"/>
-          <path d="M0 10 a10 10 0 0 1 10-10 h280 a10 10 0 0 1 10 10 v44 h-300 z" fill="#006DAE"/>
-          <circle cx="30" cy="27" r="15" fill="#fff"/><text x="30" y="33" text-anchor="middle" font-size="17" font-weight="800" fill="#006DAE">1</text>
-          <text x="56" y="33" font-size="16.5" font-weight="700" fill="#fff">Back-breeding</text>
-          <text x="16" y="88" font-size="13" fill="#42586a">Selectively breed living relatives to</text>
-          <text x="16" y="109" font-size="13" fill="#42586a">accumulate ancestral traits over</text>
-          <text x="16" y="130" font-size="13" fill="#42586a">many generations.</text>
-          <text x="16" y="158" font-size="13" font-weight="600" fill="#004e7c">e.g. aurochs-like cattle programmes</text>
-          <line x1="16" y1="205" x2="284" y2="205" stroke="#e3edf3"/>
-          <text x="16" y="232" font-size="11" font-weight="800" letter-spacing="1" fill="#c2551e">LIMITATION</text>
-          <text x="16" y="256" font-size="13" fill="#42586a">Slow; recovers the look of a</text>
-          <text x="16" y="277" font-size="13" fill="#42586a">species, not its genome.</text>
-        </g>
-        <g transform="translate(350,95)">
-          <rect width="300" height="330" rx="10" fill="#fff" stroke="#d9e5ec"/>
-          <path d="M0 10 a10 10 0 0 1 10-10 h280 a10 10 0 0 1 10 10 v44 h-300 z" fill="#2f8fc4"/>
-          <circle cx="30" cy="27" r="15" fill="#fff"/><text x="30" y="33" text-anchor="middle" font-size="17" font-weight="800" fill="#2f8fc4">2</text>
-          <text x="56" y="33" font-size="16.5" font-weight="700" fill="#fff">Somatic cell cloning</text>
-          <text x="16" y="88" font-size="13" fill="#42586a">Transfer a nucleus from a preserved</text>
-          <text x="16" y="109" font-size="13" fill="#42586a">cell of the extinct species into an</text>
-          <text x="16" y="130" font-size="13" fill="#42586a">enucleated oocyte of a surrogate.</text>
-          <text x="16" y="158" font-size="13" font-weight="600" fill="#004e7c">e.g. the Dolly-the-sheep route;</text>
-          <text x="16" y="179" font-size="13" font-weight="600" fill="#004e7c">black-footed ferret recovery</text>
-          <line x1="16" y1="205" x2="284" y2="205" stroke="#e3edf3"/>
-          <text x="16" y="232" font-size="11" font-weight="800" letter-spacing="1" fill="#c2551e">LIMITATION</text>
-          <text x="16" y="256" font-size="13" fill="#42586a">Needs intact viable cells and a</text>
-          <text x="16" y="277" font-size="13" fill="#42586a">closely related surrogate mother.</text>
-        </g>
-        <g transform="translate(670,95)">
-          <rect width="300" height="330" rx="10" fill="#fff" stroke="#d9e5ec"/>
-          <path d="M0 10 a10 10 0 0 1 10-10 h280 a10 10 0 0 1 10 10 v44 h-300 z" fill="#004e7c"/>
-          <circle cx="30" cy="27" r="15" fill="#fff"/><text x="30" y="33" text-anchor="middle" font-size="17" font-weight="800" fill="#004e7c">3</text>
-          <text x="56" y="33" font-size="16.5" font-weight="700" fill="#fff">Genome editing</text>
-          <text x="16" y="88" font-size="13" fill="#42586a">CRISPR-edit the living relative's</text>
-          <text x="16" y="109" font-size="13" fill="#42586a">genome toward the extinct</text>
-          <text x="16" y="130" font-size="13" fill="#42586a">reference, then breed edited lines.</text>
-          <text x="16" y="158" font-size="13" font-weight="600" fill="#004e7c">e.g. mammoth-like elephant and</text>
-          <text x="16" y="179" font-size="13" font-weight="600" fill="#004e7c">thylacine programmes</text>
-          <line x1="16" y1="205" x2="284" y2="205" stroke="#e3edf3"/>
-          <text x="16" y="232" font-size="11" font-weight="800" letter-spacing="1" fill="#c2551e">LIMITATION</text>
-          <text x="16" y="256" font-size="13" fill="#42586a">Thousands of loci differ; an edited</text>
-          <text x="16" y="277" font-size="13" fill="#42586a">phenotype is not the original species.</text>
-        </g>
-      </g>
-      <rect x="30" y="455" width="940" height="64" rx="10" fill="#006DAE"/>
-      <text x="60" y="482" font-size="14" font-weight="800" fill="#fff" font-family="-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif">Shared challenges</text>
-      <text x="60" y="504" font-size="12.5" fill="#cfe2ee" font-family="-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif">surrogate species &amp; welfare · epigenetic reprogramming · learning species-specific behaviour · ecology &amp; regulation</text>
-    </svg>
-    <figcaption data-page-node-id="RfqQne7IkbNW79UMgQ3wSA"><b style="color:#c2551e" data-page-node-id="gAimHjxQ54NWqvo3yR2MJi">⚠ PLACEHOLDER figure — for layout testing only. Replace with your own figure + a proper legend before submission.</b><br data-page-node-id="xlZg42WXG7VxiAqKbaVN8x"><b data-page-node-id="6hrnWt0GdcgCzRxadckd0s">Figure 1.</b> <i data-page-node-id="42XO7xXcrA5d5nN3who8of">[What the visual shows] · [its main message and relevance to this entry] · [define labels / colours / symbols / abbreviations].</i> Source: <i data-page-node-id="hBsVtEhBMl4yQRNVxFYKtG">[citation],</i> reproduced / adapted / created by the author.</figcaption>
+<div class="links" data-page-node-id="EC009ABMkbPnLi4jYqr2eG">
+  <b data-page-node-id="1yqprIGQ1giU1vZW6TfaeF">Article:</b> <a href="https://theconversation.com/should-we-bring-back-the-dodo-de-extinction-is-a-feel-good-story-but-these-high-tech-replacements-arent-really-resurrecting-species-199586" target="_blank" data-page-node-id="8r2mq61UBx7cLGMBwLDCZV">https://theconversation.com/should-we-bring-back-the-dodo-de-extinction-is-a-feel-good-story-but-these-high-tech-replacements-arent-really-resurrecting-species-199586</a><br data-page-node-id="SAD6yIfEC0v5tOAEDJLn4Q">
+  <b data-page-node-id="irhfELT8meOPmi5FQ35vzy">Academic Paper:</b> <a href="https://doi.org/10.1126/science.1236965" target="_blank" data-page-node-id="KQ63G2ztaR24bHlp3ZU0My">https://doi.org/10.1126/science.1236965</a><br data-page-node-id="7uP0FiNsgn4NAZATEKP07n">
+  <span class="note" data-page-node-id="knQztzFYoRpLAtVCCNQ5d3">* Please find complete references under 'References'.</span>
+</div>
+
+<div class="lead" data-page-node-id="8MBa4TgldJCVRoHzp9DCvD">
+  <p data-page-node-id="W5nNAbAxSzuRJNUZD1jex1">Nowadays, "resurrecting" mammoths repeatedly appears in commercial advertising and social media.</p>
+  <p data-page-node-id="1tBdGFuyo6INwjID8sASCU">But from a genetics perspective, it's much more complicated: are we resurrecting a species, or creating new species?</p>
+</div>
+
+<div class="body" data-page-node-id="qMGHTqj44OXOJ0QPPMQPpx">
+  <p data-page-node-id="rOCODMg8w4mAWYyr1fl186">Schnebly and Minteer (2023) point out that the de-extinction narrative is a misleading "resurrection" story. Sherkow and Greely (2013) summarized three primary methods: back-breeding, somatic cell nuclear transfer (SCNT), and genome editing.</p>
+</div>
+
+<div class="sect" data-page-node-id="Dv2F4BN5kmwZoR7HFKaCWd">
+  <div class="sect-title" data-page-node-id="jVVeKu9YQYR29m4RaJYgK1">A Close Approximation</div>
+  <p data-page-node-id="2XS2aStEHeSnsxIEEjEmoW">De-extinction research is not without value: it pushes gene-editing technologies further and provides rescue tools for nearly extinct species. But the creature it creates can only be an approximation.</p>
+  <p data-page-node-id="2Gpgc1gZhNWJAg2zHFSLJB">Without the original cytoplasmic environment of the egg, full epigenetic marks, symbiotic microbes, and companions from its own species, a "resurrected" mammoth can never return to and support the original ecological niche of the mammoth in history.</p>
+</div>
+
+<div class="sect" data-page-node-id="z3WHGCJigzffWfRDOmpxer">
+  <div class="sect-title" data-page-node-id="w670CVzXAXd3tAf7EzlvEU">Reflect &amp; Connect</div>
+  <p data-page-node-id="xyEUh4O3CLtylH0zNQfKuX">The three technological approaches of de-extinction mentioned earlier are directly related to the first three weeks in GEN2052. In relation to genetic sequencing (Week 2): ancient DNA is highly fragmented, even with the third generation long-read sequencing, we still have to face the low quality level and repeated sequences being hard to assemble.</p>
+  <p data-page-node-id="hSL0ZWG8m9Qxgtr3bT1Sfh">At the genome level (Week 3): as shown in Figure 1, protein-coding sequences make up only 1–2% of the genome — so even if the encoding sequences of Asian elephants were replaced with mammoth versions using multiplex CRISPR (Week 1), the non-coding regulatory regions would still be impossible to recover. Knowing this, I now have a better understanding of the technical boundaries of current genetic engineering technology.</p>
+  <figure class="figblock" data-page-node-id="Pn4XIZI506MrDDQNCGEvea">
+    <img src="images/genome-organization.png" alt="Organization of the human genome: ~20% genes and gene-related sequences vs ~80% extragenic DNA" data-page-node-id="4rGqp2pjoLRObMndfwaRkd">
+    <p class="cap" data-page-node-id="hNYwUXvnIrfASz6tX3oJJq">Figure 1: Organization of the human genome. Only ~20% of the nuclear genome comprises genes and gene-related sequences (~20,000 genes), while ~80% is extragenic DNA — including LINEs, SINEs, <i data-page-node-id="mYCHNK3daAEdQx40gO4GEE">Alu</i> repeats and microsatellites (red arrows mark components highlighted in lectures). Reproduced from the GEN2052 Week 3 lecture slides, after Gregory, <i data-page-node-id="ZnDxwEvUxfmLr42u9BmnfG">Nature Reviews Genetics</i> 6:699–708 (2005).</p>
   </figure>
-  <div class="refs" data-page-node-id="xtSwjxbzTCBCetP6aWcmvF"><h4 data-page-node-id="HSWoUl89y019MABhr43Qjd">References</h4><ul data-page-node-id="PCQsTLSC2uL1dwUK9XUghh">
-    <li>Schnebly, R. A., &amp; Minteer, B. A. (2023, March 1). Should we bring back the dodo? De-extinction is a feel-good story, but these high-tech replacements aren't really 'resurrecting' species. <i>The Conversation</i>. https://theconversation.com/should-we-bring-back-the-dodo-de-extinction-is-a-feel-good-story-but-these-high-tech-replacements-arent-really-resurrecting-species-199586</li>
-    <li>Sherkow, J. S., &amp; Greely, H. T. (2013). What if extinction is not forever? <i>Science, 340</i>(6128), 32–33. https://doi.org/10.1126/science.1236965</li>
-  </ul></div>
-</section>
+</div>
+
+<div class="sect" data-page-node-id="uOv8zSHhwW8yd0BKZ5MKsE">
+  <div class="sect-title" data-page-node-id="XTNcw1aqszwrHRNLCTXEaJ">Intrigue &amp; Optimism</div>
+  <p class="intrigue" data-page-node-id="MTFcktYjfnXJ273CUJXnKG">The article gives me new insights about the relationship between genome and living organism: the genome is not simply a code which can directly replicate an organism from it. Using terms from computer science, the genome is stateless, while an organism is stateful and cannot be easily reproduced from a genome. Moving forward, I want to explore comparing genomes to computer operating systems in terms of the topology and evolution of their regulatory control networks.</p>
+</div>
+
+<div class="refs" data-page-node-id="VEhezIIBwVZbLjtWOBc71Y">
+  <h4 data-page-node-id="3jYU5L9yoUeu4IgefaBWxN">References</h4>
+  <ul data-page-node-id="2yZt7KK0hrsq7dYCZxfv80">
+    <li data-page-node-id="z2EgEMICt3iMD9qFtpfb7e">Schnebly, R. A., &amp; Minteer, B. A. (2023, March 1). Should we bring back the dodo? De-extinction is a feel-good story, but these high-tech replacements aren't really 'resurrecting' species. <i data-page-node-id="IMwRKG2WMkQHUyi5Ukucgg">The Conversation</i>. https://theconversation.com/should-we-bring-back-the-dodo-de-extinction-is-a-feel-good-story-but-these-high-tech-replacements-arent-really-resurrecting-species-199586</li>
+    <li data-page-node-id="uGbmfxxKLidORIYvZ80XqA">Sherkow, J. S., &amp; Greely, H. T. (2013). What if extinction is not forever? <i data-page-node-id="e7KM5DU5Gn0JWvqDiTr3yz">Science, 340</i>(6128), 32–33. https://doi.org/10.1126/science.1236965</li>
+  </ul>
+</div>
 
 </div>
 
-<div class="foot" data-page-node-id="BkIicWxgj9ysTfmAkH6WBN"><div class="wrap" data-page-node-id="5ptRHXb60tt0MLbQl89d7F">
-  <h4 data-page-node-id="4foz1qqDBr3EA5jBHEurBR">Acknowledgement of AI use</h4>
-  <p class="ai" data-page-node-id="pjF7uxoUFtVOBiBcoCOGae">In preparing this eFolio, I used a generative AI assistant (WorkBuddy) for technical preparation only: building the HTML/CSS page layout and design into which my own work is placed. The articles, original peer-reviewed papers and figures were selected, read and verified by me. All written reflections, video content, analysis and personal reflections are entirely my own — no entry content was generated or drafted by AI. I take full responsibility for the accuracy of everything submitted.</p>
-  <p class="r" data-page-node-id="VOuGvPfSGb1Sv1ulg5wlvh">Referencing style: APA 7th edition (American Psychological Association), applied consistently · GEN2052 eFolio · Semester 2, 2026</p>
+<div class="foot" data-page-node-id="OUG1fG6hQAOfv5zLZpkiOt"><div class="wrap" data-page-node-id="i788SrMeQWARQGXuSgBXIg">
+  <h4 data-page-node-id="NMqzQTh9hYjE1yF89Gp2fL">Acknowledgement of AI use</h4>
+  <p class="ai" data-page-node-id="bhQGvDiVJOjkz8qy7FHSVt">In preparing this eFolio, I used a generative AI assistant (WorkBuddy) for two purposes only: (1) technical preparation — building the HTML/CSS page layout and deploying the site; and (2) refining the language and structure of my own written drafts, as permitted under Monash guidelines. The articles, original peer-reviewed papers and figures were selected, read and verified by me; all ideas, analysis, interpretations and personal reflections are my own work, and the final text is my own writing. No entry content was generated from scratch by AI. I take full responsibility for the accuracy of everything submitted.</p>
+  <p class="r" data-page-node-id="0bGPM3SK3e7R7M2iSKdx4P">Referencing style: APA 7th edition (American Psychological Association), applied consistently · GEN2052 eFolio · Semester 2, 2026</p>
 </div></div>
 
 </div>
