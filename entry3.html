@@ -21,7 +21,10 @@
 #efolio .sect-block-title{font-size:12.5px;font-weight:800;letter-spacing:.16em;color:var(--b);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:12px}
 #efolio .sect-block-title::after{content:"";flex:1;height:1px;background:var(--line)}
 #efolio .fig-img{width:100%;display:block;border-radius:10px;border:1px solid var(--line)}
-#efolio .fig-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:center}
+#efolio .fig-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0;align-items:start}
+#efolio .fig-row .fig{margin:0}
+#efolio .fig-frame{display:flex;align-items:center;justify-content:center;height:370px;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+#efolio .fig-frame img{max-width:100%;max-height:100%;display:block}
 #efolio .ph{border:2px dashed #b9cfdd;background:#f7fafc;border-radius:10px;color:var(--ph);padding:26px 22px;text-align:center;font-style:italic;font-size:14px}
 #efolio .ph b{font-style:normal;color:#6d8697}
 #efolio .body-ph{min-height:150px}
@@ -39,7 +42,7 @@
 #efolio .foot h4{color:#fff;font-size:12px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px}
 #efolio .foot .ai{border:1px dashed rgba(255,255,255,.35);border-radius:8px;padding:13px 16px;color:#9fc6dd;font-style:italic}
 #efolio .foot p.r{margin-top:12px;font-size:12px;color:#7ea6bd}
-@media(max-width:720px){#efolio .hero h1{font-size:28px}#efolio section{padding:30px 0 6px}#efolio .fig-pair{grid-template-columns:1fr}}
+@media(max-width:720px){#efolio .hero h1{font-size:28px}#efolio section{padding:30px 0 6px}#efolio .fig-row{grid-template-columns:1fr}#efolio .fig-frame{height:auto;background:transparent;border:0;overflow:visible}#efolio .fig-frame img{width:100%;max-width:100%;border:1px solid var(--line);border-radius:10px}}
 </style>
 
 <div class="hero">
@@ -66,7 +69,7 @@
   <div class="sect-block">
     <div class="sect-block-title">The study</div>
     <div class="body-text">
-      <p>Using newly published genomes and a neural network trained on simulated frequency spectra, the authors compared five demographic models. The best fit places PNG as a sister group to East Asians, with no substantial early out-of-Africa contribution. The apparent early separation — the shift in Figure 1b, where the PNG–African curve sits apart from the other pairs — is an artefact of PNG's own history: a severe bottleneck cut its effective population size to about 670, compared with roughly 3,500 in Europeans, and growth afterwards was slower. A ghost contribution below 5% cannot be excluded, but it is no longer needed to explain the curves in Figure 1b.</p>
+      <p>Using newly published genomes and a neural network trained on simulated frequency spectra, the authors compared five demographic models. The best fit places PNG as a sister group to East Asians, with no substantial early out-of-Africa contribution. The apparent early separation — the shift in Figure 2, where the PNG–African curve sits apart from the other pairs — is an artefact of PNG's own history: a severe bottleneck cut its effective population size to about 670, compared with roughly 3,500 in Europeans, and growth afterwards was slower. A ghost contribution below 5% cannot be excluded, but it is no longer needed to explain the curves in Figure 2.</p>
     </div>
   </div>
 
@@ -77,13 +80,20 @@
     </div>
   </div>
 
-  <figure class="fig">
-    <div class="fig-pair">
-      <img class="fig-img" src="images/sunda-sahul.png" alt="Map of Sunda and Sahul at low sea level, with New Guinea and Australia joined as one landmass">
-      <img class="fig-img" src="images/png-rccr-curves.png" alt="Relative cross-coalescent rate curves for pairs of human populations; the PNG–African curve is displaced relative to the other pairs">
-    </div>
-    <figcaption><b>Figure 1.</b> <b>(a)</b> Sunda and Sahul at low sea level. The grey areas are continental shelf exposed during glacial periods, when New Guinea and Australia formed the single landmass Sahul; the red and dashed lines mark the biogeographic boundaries (Huxley, Wallace, Weber and Lydekker lines) that separate Asian from Australian faunas. PNG lies on Sahul, the landmass its first settlers reached after crossing the Wallacean straits. <b>(b)</b> Relative cross-coalescent rate (RCCR) for PNG highlanders compared with African (AFR), European (EUR) and East Asian (ASN) populations. RCCR traces how freely lineages move between two populations at different times in the past, so a curve that departs from the others marks a difference in when those populations stopped exchanging ancestry. The PNG–AFR curve (brown) is displaced relative to the EUR–AFR and ASN–AFR curves — the shift earlier studies read as an early out-of-Africa contribution, which Mondal et al. attribute to the PNG bottleneck. Shading shows 95% confidence intervals from ten resampling runs. <b>(a)</b> Reproduced from Altaileopard, Wikimedia Commons (CC BY-SA 3.0); <b>(b)</b> reproduced from Mondal et al. (2025), <i>Nature Communications, 16</i>, 6345, Fig. 1 (CC BY 4.0).</figcaption>
-  </figure>
+  <div class="fig-row">
+    <figure class="fig">
+      <a class="fig-frame" href="images/sunda-sahul.png" target="_blank" rel="noopener">
+        <img src="images/sunda-sahul.png" alt="Map of Sunda and Sahul at low sea level, with New Guinea and Australia joined as one landmass">
+      </a>
+      <figcaption><b>Figure 1.</b> Sunda and Sahul at low sea level. The grey areas are continental shelf exposed during glacial periods, when New Guinea and Australia formed the single landmass Sahul; the red and dashed lines mark the biogeographic boundaries (Huxley, Wallace, Weber and Lydekker lines) that separate Asian from Australian faunas. PNG lies on Sahul, the landmass its first settlers reached after crossing the Wallacean straits. Reproduced from Altaileopard, Wikimedia Commons (CC BY-SA 3.0).</figcaption>
+    </figure>
+    <figure class="fig">
+      <a class="fig-frame" href="images/png-rccr-curves.png" target="_blank" rel="noopener">
+        <img src="images/png-rccr-curves.png" alt="Relative cross-coalescent rate curves for pairs of human populations; the PNG–African curve is displaced relative to the other pairs">
+      </a>
+      <figcaption><b>Figure 2.</b> Relative cross-coalescent rate (RCCR) for PNG highlanders compared with African (AFR), European (EUR) and East Asian (ASN) populations. RCCR traces how freely lineages move between two populations at different times in the past, so a curve that departs from the others marks a difference in when those populations stopped exchanging ancestry. The PNG–AFR curve (brown) is displaced relative to the EUR–AFR and ASN–AFR curves — the shift earlier studies read as an early out-of-Africa contribution, which Mondal et al. attribute to the PNG bottleneck. Shading shows 95% confidence intervals from ten resampling runs. Reproduced from Mondal et al. (2025), <i>Nature Communications, 16</i>, 6345, Fig. 1 (CC BY 4.0).</figcaption>
+    </figure>
+  </div>
 
   <div class="sect-block">
     <div class="sect-block-title">Strengths &amp; Limitations</div>
