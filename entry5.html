@@ -19,6 +19,7 @@
 #efolio .sect-block-title{font-size:12.5px;font-weight:800;letter-spacing:.16em;color:var(--b);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:12px}
 #efolio .sect-block-title::after{content:"";flex:1;height:1px;background:var(--line)}
 #efolio .fig-img{width:100%;display:block;border-radius:10px;border:1px solid var(--line)}
+#efolio .fig-single{max-width:620px;margin:24px auto}
 #efolio .ph{border:2px dashed #b9cfdd;background:#f7fafc;border-radius:10px;color:var(--ph);padding:26px 22px;text-align:center;font-style:italic;font-size:14px}
 #efolio .ph b{font-style:normal;color:#6d8697}
 #efolio .body-ph{min-height:150px}
@@ -72,13 +73,13 @@
   <div class="sect-block">
     <div class="sect-block-title">The Connection</div>
     <div class="body-text">
-      <p>The two topics are usually taught as separate skills, but they form a loop, drawn in Figure 1: read length decides whether haplotypes can be phased, and phasing decides whether methods like G12 can detect selection; sequencing depth decides how many samples survive filtering, and sample size decides the power of a demographic model. Mondal et al. (2025) could only reject the ghost-population model because new genomes made the frequency spectrum informative; Pandey et al. (2024) could only scan selection because ancient genomes were pseudo-haploidised in a way that preserved multilocus information. In the other direction, population models tell sequencing projects what to sequence: how many individuals, from which periods, at what coverage.</p>
+      <p>The two topics are usually taught as separate skills, but they form a loop, and Figure 1 shows one half of it: the same simulated population, analysed directly and after simulated sequencing, is recovered with different accuracy. Read length decides whether haplotypes can be phased, and phasing decides whether methods like G12 can detect selection; sequencing depth decides how many samples survive filtering, and sample size decides the power of a demographic model. Mondal et al. (2025) could only reject the ghost-population model because new genomes made the frequency spectrum informative; Pandey et al. (2024) could only scan selection because ancient genomes were pseudo-haploidised in a way that preserved multilocus information. In the other direction, population models tell sequencing projects what to sequence: how many individuals, from which periods, at what coverage.</p>
     </div>
   </div>
 
-  <figure class="fig">
-    <img class="fig-img" src="images/sequencing-inference-loop.svg" alt="Diagram showing sequencing technology on the left and population-genetic inference on the right, linked by three arrows and a feedback loop">
-    <figcaption><b>Figure 1.</b> Sequencing technology and population-genetic inference constrain each other. The left panel lists what sequencing delivers (read length, depth, ancient-DNA damage); the right panel lists what inference needs (phased haplotypes, sample size, demographic models). Arrows show how read length enables phasing, depth sets sample size, and damage forces pseudo-haploid data; the return arrow shows inference shaping what a project sequences next. Created by the author.</figcaption>
+  <figure class="fig fig-single">
+    <img class="fig-img" src="images/sequencing-pipeline.png" alt="Flowchart comparing population-genetic analysis of raw simulated genotypes with the same data passed through simulated short-read sequencing, read mapping and SNP calling">
+    <figcaption><b>Figure 1.</b> A population-genetic inference pipeline run twice. Simulated population samples are analysed either directly (A, &ldquo;Raw&rdquo;) or after an in silico short-read sequencing step &mdash; read simulation at 4&times;, 8&times; and 15&times; depth, read mapping and multi-sample SNP calling (B, &ldquo;Sequencing&rdquo;). Comparing the two tracks measures how much the sequencing step changes the accuracy and power of population-genetic inference. The figure makes the entry&rsquo;s point that sequence data are not a transparent window on genotypes: sequencing is part of the inference. Reproduced from Crawford and Lazzaro (2012), <i>Frontiers in Genetics, 3</i>, 66, Fig. A1, CC BY-NC 3.0.</figcaption>
   </figure>
 
   <div class="sect-block">
@@ -88,6 +89,7 @@
     </div>
   </div>
   <div class="refs"><h4>References</h4><ul>
+    <li>Crawford, J. E., &amp; Lazzaro, B. P. (2012). Assessing the accuracy and power of population genetic inference from low-pass next-generation sequencing data. <i>Frontiers in Genetics, 3</i>, 66. https://doi.org/10.3389/fgene.2012.00066</li>
     <li>Logsdon, G. A., Vollger, M. R., &amp; Eichler, E. E. (2020). Long-read human genome sequencing and its applications. <i>Nature Reviews Genetics, 21</i>(10), 597–614. https://doi.org/10.1038/s41576-020-0236-x</li>
     <li>Mondal, M., André, M., Pathak, A. K., Brucato, N., Ricaut, F.-X., Metspalu, M., &amp; Eriksson, A. (2025). Resolving out of Africa event for Papua New Guinean population using neural network. <i>Nature Communications, 16</i>, 6345. https://doi.org/10.1038/s41467-025-61661-w</li>
     <li>Pandey, D., Harris, M., Garud, N. R., &amp; Narasimhan, V. M. (2024). Leveraging ancient DNA to uncover signals of natural selection in Europe lost due to admixture or drift. <i>Nature Communications, 15</i>, 9772. https://doi.org/10.1038/s41467-024-53852-8</li>
