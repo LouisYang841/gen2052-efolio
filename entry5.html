@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <div id="efolio">
 <style>
 #efolio{--b:#006DAE;--bd:#004e7c;--deep:#02324e;--ink:#1a2b38;--mut:#5b7285;--bg:#eef4f8;--card:#fff;--line:#d9e5ec;--ph:#8ba3b3;font:16px/1.65 -apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
@@ -13,6 +14,11 @@
 #efolio .meta span{font-size:11.5px;font-weight:700;padding:3px 11px;border-radius:99px;background:#e8f1f7;color:var(--bd)}
 #efolio h2{font-size:24px;line-height:1.25;color:var(--bd);margin-bottom:6px}
 #efolio .lede{font-size:14.5px;color:var(--mut);margin-bottom:18px}
+#efolio .body-text p{font-size:15.5px;color:#33475a;margin:0 0 18px}
+#efolio .sect-block{margin-top:30px}
+#efolio .sect-block-title{font-size:12.5px;font-weight:800;letter-spacing:.16em;color:var(--b);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:12px}
+#efolio .sect-block-title::after{content:"";flex:1;height:1px;background:var(--line)}
+#efolio .fig-img{width:100%;display:block;border-radius:10px;border:1px solid var(--line)}
 #efolio .ph{border:2px dashed #b9cfdd;background:#f7fafc;border-radius:10px;color:var(--ph);padding:26px 22px;text-align:center;font-style:italic;font-size:14px}
 #efolio .ph b{font-style:normal;color:#6d8697}
 #efolio .body-ph{min-height:150px}
@@ -48,15 +54,44 @@
 <section id="e5">
   <div class="meta"><span>Entry 5</span><span>Whole unit</span><span>Written reflection · 350 words</span></div>
   <h2>Reflection across GEN2052</h2>
-  <p class="lede">Two concepts from different topics, the connection between them, and where I want to go next</p>
-  <div class="ph body-ph"><b>Reflection — 350 words.</b><br>Concept 1 explained → Concept 2 explained → the meaningful connection between them → one question or area I would explore further, and why. Academic sources cited in-text; supported by the figure below.</div>
+  <p class="lede">Sequencing technology (Week 2) and population-genetic inference (Weeks 6–7): how each constrains the other</p>
+  <div class="sect-block">
+    <div class="sect-block-title">Concept 1 · Sequencing technology (Week 2)</div>
+    <div class="body-text">
+      <p>Sequencing technology sets the resolution at which genomes can be read. Short-read platforms deliver cheap, accurate reads but struggle with repeats; long-read platforms span repeats and phased haplotypes, which is what telomere-to-telomere assembly requires (Logsdon et al., 2020). Ancient DNA pushes the same technology to its limit, because fragments are short, damaged and contaminated.</p>
+    </div>
+  </div>
+
+  <div class="sect-block">
+    <div class="sect-block-title">Concept 2 · Population-genetic inference (Weeks 6–7)</div>
+    <div class="body-text">
+      <p>Population-genetic inference turns genomes into history. Allele frequencies, Hardy–Weinberg expectations and genetic drift describe how variation changes within populations, while coalescent methods estimate effective population size and divergence from the pattern of shared lineages (Speidel et al., 2019). The inference is only as good as the data it receives. Hardy–Weinberg gives the null expectation for genotype frequencies, while drift, selection and migration are the forces that move a population away from it.</p>
+    </div>
+  </div>
+
+  <div class="sect-block">
+    <div class="sect-block-title">The Connection</div>
+    <div class="body-text">
+      <p>The two topics are usually taught as separate skills, but they form a loop, drawn in Figure 1: read length decides whether haplotypes can be phased, and phasing decides whether methods like G12 can detect selection; sequencing depth decides how many samples survive filtering, and sample size decides the power of a demographic model. Mondal et al. (2025) could only reject the ghost-population model because new genomes made the frequency spectrum informative; Pandey et al. (2024) could only scan selection because ancient genomes were pseudo-haploidised in a way that preserved multilocus information. In the other direction, population models tell sequencing projects what to sequence: how many individuals, from which periods, at what coverage.</p>
+    </div>
+  </div>
+
   <figure class="fig">
-    <div class="fig-ph">Figure 1 placeholder — concept-connection diagram (created by the author), e.g. Concept 1 ↔ Concept 2 with the linking mechanism labelled</div>
-    <figcaption><b>Figure 1.</b> <i>[What the visual shows] · [how it illustrates the connection between the two concepts] · [define labels / colours / symbols].</i> Created by the author.</figcaption>
+    <img class="fig-img" src="images/sequencing-inference-loop.svg" alt="Diagram showing sequencing technology on the left and population-genetic inference on the right, linked by three arrows and a feedback loop">
+    <figcaption><b>Figure 1.</b> Sequencing technology and population-genetic inference constrain each other. The left panel lists what sequencing delivers (read length, depth, ancient-DNA damage); the right panel lists what inference needs (phased haplotypes, sample size, demographic models). Arrows show how read length enables phasing, depth sets sample size, and damage forces pseudo-haploid data; the return arrow shows inference shaping what a project sequences next. Created by the author.</figcaption>
   </figure>
+
+  <div class="sect-block">
+    <div class="sect-block-title">Where I Want to Go Next</div>
+    <div class="body-text">
+      <p>The question I want to pursue is whether long-read sequencing of ancient genomes from tropical Oceania can settle the PNG ghost-population question directly. DNA preservation there is poor, but if long reads recover enough endogenous fragments they would provide the time series Mondal et al. had to infer statistically. Answering it would connect the two topics I have found most interesting: what a sequencer can read, and what a model can prove. It would also test the technology itself, not only the model.</p>
+    </div>
+  </div>
   <div class="refs"><h4>References</h4><ul>
-    <li><i>[Full reference — academic source 1]</i></li>
-    <li><i>[Full reference — academic source 2]</i></li>
+    <li>Logsdon, G. A., Vollger, M. R., &amp; Eichler, E. E. (2020). Long-read human genome sequencing and its applications. <i>Nature Reviews Genetics, 21</i>(10), 597–614. https://doi.org/10.1038/s41576-020-0236-x</li>
+    <li>Mondal, M., André, M., Pathak, A. K., Brucato, N., Ricaut, F.-X., Metspalu, M., &amp; Eriksson, A. (2025). Resolving out of Africa event for Papua New Guinean population using neural network. <i>Nature Communications, 16</i>, 6345. https://doi.org/10.1038/s41467-025-61661-w</li>
+    <li>Pandey, D., Harris, M., Garud, N. R., &amp; Narasimhan, V. M. (2024). Leveraging ancient DNA to uncover signals of natural selection in Europe lost due to admixture or drift. <i>Nature Communications, 15</i>, 9772. https://doi.org/10.1038/s41467-024-53852-8</li>
+    <li>Speidel, L., Forest, M., Shi, S., &amp; Myers, S. R. (2019). A method for genome-wide genealogy estimation for thousands of samples. <i>Nature Genetics, 51</i>(9), 1321–1329. https://doi.org/10.1038/s41588-019-0484-x</li>
   </ul></div>
 </section>
 

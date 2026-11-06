@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600" role="img" aria-labelledby="figTitle figDesc">
+  <title id="figTitle">Sequencing technology and population-genetic inference form a loop</title>
+  <desc id="figDesc">Left: what sequencing technology delivers. Right: what population-genetic inference needs. Arrows show read length enabling phasing, depth setting sample size, and ancient-DNA damage forcing pseudo-haploid data; a feedback arrow shows inference shaping sequencing design.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5b7285"/>
+    </marker>
+    <style>
+      .h{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:21px;font-weight:700;fill:#02324e}
+      .s{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:1.4px;fill:#5b7285}
+      .i{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:15px;fill:#1a2b38}
+      .l{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:13px;font-weight:700;fill:#41586a}
+      .dot{fill:#006dae}
+      .dot2{fill:#2c6e3f}
+      .ar{stroke:#5b7285;stroke-width:2;fill:none}
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="600" fill="#ffffff"/>
+
+  <!-- left panel -->
+  <rect x="40" y="70" width="340" height="350" rx="16" fill="#e8f1f7" stroke="#006dae" stroke-width="1.5"/>
+  <text class="h" x="64" y="112">Sequencing technology</text>
+  <text class="s" x="64" y="136">WEEK 2</text>
+  <circle class="dot" cx="72" cy="184" r="4"/>
+  <text class="i" x="88" y="189">short reads: cheap, accurate</text>
+  <circle class="dot" cx="72" cy="228" r="4"/>
+  <text class="i" x="88" y="233">long reads: span repeats</text>
+  <circle class="dot" cx="72" cy="272" r="4"/>
+  <text class="i" x="88" y="277">long reads: phase haplotypes</text>
+  <circle class="dot" cx="72" cy="316" r="4"/>
+  <text class="i" x="88" y="321">ancient DNA: short, damaged</text>
+
+  <!-- right panel -->
+  <rect x="620" y="70" width="340" height="350" rx="16" fill="#e6f2ea" stroke="#2c6e3f" stroke-width="1.5"/>
+  <text class="h" x="644" y="112">Population inference</text>
+  <text class="s" x="644" y="136">WEEKS 6–7</text>
+  <circle class="dot2" cx="652" cy="184" r="4"/>
+  <text class="i" x="668" y="189">allele frequencies &amp; HWE</text>
+  <circle class="dot2" cx="652" cy="228" r="4"/>
+  <text class="i" x="668" y="233">drift &amp; effective size</text>
+  <circle class="dot2" cx="652" cy="272" r="4"/>
+  <text class="i" x="668" y="277">dating: splits &amp; Ne</text>
+  <circle class="dot2" cx="652" cy="316" r="4"/>
+  <text class="i" x="668" y="321">coalescent models (Relate)</text>
+
+  <!-- forward arrows -->
+  <line class="ar" x1="382" y1="180" x2="614" y2="180" marker-end="url(#arrow)"/>
+  <text class="l" x="498" y="166" text-anchor="middle">read length → phasing</text>
+
+  <line class="ar" x1="382" y1="250" x2="614" y2="250" marker-end="url(#arrow)"/>
+  <text class="l" x="498" y="236" text-anchor="middle">depth → sample size</text>
+
+  <line class="ar" x1="382" y1="320" x2="614" y2="320" marker-end="url(#arrow)"/>
+  <text class="l" x="498" y="306" text-anchor="middle">damage → pseudo-haploid</text>
+
+  <!-- feedback arrow -->
+  <polyline class="ar" points="790,420 790,500 210,500 210,426" marker-end="url(#arrow)"/>
+  <text class="l" x="500" y="528" text-anchor="middle">models decide what to sequence next</text>
+</svg>

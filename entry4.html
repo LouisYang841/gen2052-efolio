@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <div id="efolio">
 <style>
 #efolio{--b:#006DAE;--bd:#004e7c;--deep:#02324e;--ink:#1a2b38;--mut:#5b7285;--bg:#eef4f8;--card:#fff;--line:#d9e5ec;--ph:#8ba3b3;font:16px/1.65 -apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
@@ -15,6 +16,11 @@
 #efolio .lede{font-size:14.5px;color:var(--mut);margin-bottom:18px}
 #efolio .art-line{font-size:13.5px;color:#42586a;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 15px;margin-bottom:14px}
 #efolio .art-line b{color:var(--bd)}
+#efolio .body-text p{font-size:15.5px;color:#33475a;margin:0 0 18px}
+#efolio .sect-block{margin-top:30px}
+#efolio .sect-block-title{font-size:12.5px;font-weight:800;letter-spacing:.16em;color:var(--b);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:12px}
+#efolio .sect-block-title::after{content:"";flex:1;height:1px;background:var(--line)}
+#efolio .fig-img{width:100%;display:block;border-radius:10px;border:1px solid var(--line)}
 #efolio .ph{border:2px dashed #b9cfdd;background:#f7fafc;border-radius:10px;color:var(--ph);padding:26px 22px;text-align:center;font-style:italic;font-size:14px}
 #efolio .ph b{font-style:normal;color:#6d8697}
 #efolio .body-ph{min-height:150px}
@@ -52,11 +58,42 @@
   <h2>Lost and found: natural selection in ancient European genomes</h2>
   <p class="lede">Weeks 9–11: selection; molecular evolution; quantitative genetics</p>
   <p class="art-line"><b>Article:</b> <a href="https://www.sciencedaily.com/releases/2024/11/241119181845.htm" target="_blank">"Scientists use ancient DNA to shed light on adaptation of early Europeans" (2024), <i>ScienceDaily</i></a> &nbsp;·&nbsp; <b>Original paper:</b> <a href="https://doi.org/10.1038/s41467-024-53852-8" target="_blank">Pandey et al. (2024), <i>Nature Communications</i></a></p>
-  <div class="ph body-ph"><b>Reflection — 350 words.</b><br>Explain the study · connect to Weeks 9–11 concepts (natural selection, molecular evolution, quantitative genetics) · weigh strengths &amp; limitations · broader significance · what I learned.</div>
+  <div class="body-text">
+    <p>Modern genomes preserve only eroded traces of past selection: drift, recombination and admixture blur the footprints of adaptation. Ancient DNA offers what modern data cannot — a time series in which the same population is sampled before and after a selective event. Can such a series recover what drift has erased?</p>
+  </div>
+
+  <div class="sect-block">
+    <div class="sect-block-title">The study</div>
+    <div class="body-text">
+      <p>Pandey et al. (2024) assembled 708 ancient European genomes spanning about 7,000 years and grouped them into four periods. Instead of allele-frequency tests, they applied G12, a multi-locus statistic that detects haplotypes raised to high frequency by selection and works on pseudo-haploid data — the only format low-coverage ancient DNA allows. In simulations and at validated loci (LCT, TLR1, SLC24A5), G12 outperformed SweepFinder2. Across the time transect it identified 14 candidate regions; 11 appeared in only one period or its neighbour, HLA was shared by all four, and LCT was significant only in the Historical period.</p>
+    </div>
+  </div>
+
+  <div class="sect-block">
+    <div class="sect-block-title">Reflect &amp; Connect</div>
+    <div class="body-text">
+      <p>This connects to the selection content of Weeks 9–11. Directional selection should drive a favourable allele towards fixation, yet here most signals disappear between periods, as Figure 1 shows. The DDT-resistance example showed that selection can reverse when the environment changes; this paper shows that even without reversal the signature can be overwritten. Neutral theory makes the same point from the other side: most molecular change is drift, so a true sweep must be strong enough to stand out. The immune signals also echo the SARS-CoV-2 variant tracking from class.</p>
+    </div>
+  </div>
+
   <figure class="fig">
-    <div class="fig-ph">Figure 1 placeholder — e.g. selection / allele-frequency figure related to the study (created by the author or reproduced with citation)</div>
-    <figcaption><b>Figure 1.</b> <i>[What the visual shows] · [its main message and relevance to this entry] · [define labels / colours / symbols / abbreviations].</i> Source: <i>[citation],</i> reproduced / adapted / created by the author.</figcaption>
+    <img class="fig-img" src="images/europe-selection-scan.png" alt="Genome-wide G12 selection scan across four prehistoric European periods, with HLA, OCA2/HERC2, SLC24A5 and LCT highlighted">
+    <figcaption><b>Figure 1.</b> Genome-wide selection scan across four periods of European prehistory. Panel <b>a</b> plots G12 — a measure of how strongly haplotypes carrying an allele have risen in frequency — along each chromosome; peaks that cross the dashed threshold are candidate selective sweeps. HLA is the only region detected in all four periods, OCA2/HERC2 appears in the Neolithic, SLC24A5 in the Bronze and Iron Ages, and LCT only in the Historical period, when the lactase-persistence allele arrived with Steppe pastoralists. Panel <b>b</b> compares mean G12 across functional classes of SNPs; panel <b>c</b> lists the 14 candidate regions and the periods in which each is significant. N Neolithic, BA Bronze Age, IA Iron Age, H Historical. Reproduced from Pandey et al. (2024), <i>Nature Communications, 15</i>, 9772, Fig. 4 (CC BY 4.0).</figcaption>
   </figure>
+
+  <div class="sect-block">
+    <div class="sect-block-title">Strengths &amp; Limitations</div>
+    <div class="body-text">
+      <p>Strengths include the sample size, the simulation benchmarking and the functional positive controls. But pseudo-haploid genotypes discard heterozygosity, the scan detects mainly strong selection, windows cannot pinpoint the causal allele, and every sample is European. The authors also cannot distinguish drift from admixture as the cause of the missing signals.</p>
+    </div>
+  </div>
+
+  <div class="sect-block">
+    <div class="sect-block-title">Insights &amp; Curiosity</div>
+    <div class="body-text">
+      <p>I looked up rs4988235 in my own genotype data: an allele discussed in Week 8 sits in my own file. What I want to understand next is how a selection signal can be localised to a single variant, and whether this approach transfers to populations outside Europe, where most ancient-DNA time transects do not yet exist.</p>
+    </div>
+  </div>
   <div class="refs"><h4>References</h4><ul>
     <li>University of Texas at Austin. (2024, November 19). Scientists use ancient DNA to shed light on adaptation of early Europeans. <i>ScienceDaily</i>. https://www.sciencedaily.com/releases/2024/11/241119181845.htm</li>
     <li>Pandey, D., Harris, M., Garud, N. R., &amp; Narasimhan, V. M. (2024). Leveraging ancient DNA to uncover signals of natural selection in Europe lost due to admixture or drift. <i>Nature Communications, 15</i>, 9772. https://doi.org/10.1038/s41467-024-53852-8</li>
